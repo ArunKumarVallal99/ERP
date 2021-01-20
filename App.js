@@ -13,8 +13,8 @@ class App extends Component{
 
   render(){
     return(
-    <Bottom/>
-    <Login/>
+      <Bottom/>
+      //<Login/>
       )
   }
 }
