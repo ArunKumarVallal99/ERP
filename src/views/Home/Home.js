@@ -13,7 +13,7 @@ class Home extends Component{
                     <View style={Styles.photoView} >
                         <Image
                         style={Styles.profileImage}
-                        source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}}
+                        source={require('../../assets/Images/Placeholder.png')}
                         />
                     </View>
 

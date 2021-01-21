@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs'
-import Home from '../components/Home/Home';
-import Profile from '../components/Profile/Profile';
+import Profile from '../views/Profile/Profile';
 import {NavigationContainer} from '@react-navigation/native'
-import Settings from '../components/Settings/Settings'
+import Settings from '../views/Settings/Settings'
 import Icon from 'react-native-vector-icons/Ionicons';
+import {Image  } from "react-native";
+import Home from "../views/Home/Home";
 const BottomTabNavigation = createBottomTabNavigator();
 
 
@@ -18,8 +19,12 @@ const Bottom= ()=>{
                 options={{
                     tabBarLabel: 'Home',
                     tabBarIcon: ({ color}) => (
-                        <Icon name="home" color={color} size={25}/>  
-                    ),
+                        // <Icon name="home" color={color} size={25}/>  
+                        <Image
+                        style={{height:20,width:20}}
+                        source={require('../assets/Images/home.png')}
+                        />
+                        ),
                   }}
                 />
 
@@ -29,7 +34,11 @@ const Bottom= ()=>{
                 options={{
                     tabBarLabel: 'Profile',
                     tabBarIcon: ({ color}) => (
-                        <Icon name="ios-person-outline" color={color} size={25}/>  
+                        <Image
+                        style={{height:22,width:20}}
+                        source={require('../assets/Images/profile.png')}
+                        />
+                        //<Icon name="ios-person-outline" color={color} size={25}/>  
                     ),
                   }}/>
 
