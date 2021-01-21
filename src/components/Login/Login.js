@@ -1,7 +1,33 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
+import { Text, View, StyleSheet, TextInput, TouchableOpacity, Alert} from 'react-native';
+import styles from './Style';
 
 export default class Login extends Component{
+    state={
+        email:''
+    };
+
+    validation=()=>{
+        const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        // if(!this.state.email.trim()){
+        //     console.log('missing email')
+        //     Alert.alert('missing email')
+        // }
+        // else if(reg.test(this.state.email)=== false){
+        //     Alert.alert("Invalid Email ID")
+        //   } 
+    //     if (reg.test(this.state.email) === true){
+    //         alert('valid');
+    //     }
+    //     else{
+    //         alert();
+    //     }
+    // }
+    // onLogin() {
+    //     const { username} = this.state;
+    
+    //     Alert.alert('Credentials', `${username} `);
+    //   }
     render(){
         return(
             <View style={styles.container}>
@@ -13,7 +39,8 @@ export default class Login extends Component{
                         keyboardType='visible-password'
                         placeholder='optisolbusiness@gmail.com'
                         textContentType='password'
-                        secureTextEntry={true} />
+                        secureTextEntry={true}
+                        onChangeText={text=>this.setState({emailValue:text})} />
                         {/* <Text>Fiii</Text> */}
                         {/* // underlineColorAndroid='grey' /> */}
                     </View>
@@ -25,7 +52,7 @@ export default class Login extends Component{
                         placeholder='optisolbusiness'
                         textContentType='password'
                         secureTextEntry={true} />
-                        <Text style={styles.forg}>ForgotPassword</Text>
+                        <Text style={styles.forg}>Forgot Password.?</Text>
                         {/* // underlineColorAndroid='grey' /> */}
                      </View>
                     <View style={styles.buttonView}>
@@ -47,80 +74,3 @@ export default class Login extends Component{
     }
 }
 
-const styles=StyleSheet.create({
-    container:{
-        padding:20,
-        flex:1,
-        justifyContent:'center'
-    },
-    inputcontainer:{
-        padding:40,
-        justifyContent:'center',
-        // alignItems:'center'
-    },
-    text:{
-        fontSize:20,
-        fontWeight:'bold',
-        paddingBottom:5,
-        marginRight:10,
-    },
-    inputview:{
-        paddingBottom:30
-    },
-    inputtext:{
-        // flex:1,
-        height:50,
-        width:320,
-        // borderColor:'grey',
-        // borderBottomWidth:1,
-        backgroundColor:'#D3D3D3',
-        fontSize:17,
-        borderRadius:10
-    },
-    userLogin:{
-        padding:30,
-        justifyContent:'center',
-        flexDirection:'row',
-    },
-    buttonView:{
-        justifyContent:'center',
-        // alignItems:'center',
-        padding:40,
-        flex:1,
-        marginRight:90,
-        paddingLeft:0.5
-        // paddingRight:40,
-    },
-    button:{
-        height:60,
-        width:320,
-        borderRadius:10,
-        marginLeft:.5,
-        // justifyContent:'center',
-        // borderWidth:5,
-        backgroundColor:'#42A5F5',
-        borderColor:'blue',
-        alignItems:"center",
-        justifyContent:'center',
-    },
-    buttonText:{
-        fontSize:15,
-        // backgroundColor:'#fff'
-        color:'#fff'
-    },
-    user:{
-        fontSize:15,
-    },
-    joinus:{
-        fontSize:15,
-        color:'blue'
-    },
-    forg:{
-        fontSize:15,
-        alignSelf: 'flex-end',
-        paddingLeft:10
-        // marginLeft:10
-    }
-
-
-})
