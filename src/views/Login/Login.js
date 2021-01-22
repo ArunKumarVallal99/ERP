@@ -63,12 +63,12 @@ export default class Login extends Component{
                     </View> 
 
                 </View>
-                <View style={styles.userLogin}>
+                {/* <View style={styles.userLogin}>
               <Text style={styles.user}>If Any Problem.?</Text>
               <TouchableOpacity onPress={()=>Alert.alert('Redirecting to Register Page - Please Wait')}>             
                 <Text style={styles.joinus}> Contact Us</Text>
               </TouchableOpacity>
-               </View>
+               </View> */}
 
             </View>
         )

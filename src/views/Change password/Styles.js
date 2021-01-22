@@ -1,21 +1,22 @@
-import { StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import fonts from '../../res/fonts';
+
 const styles=StyleSheet.create({
     container:{
         padding:20,
         flex:1,
-        justifyContent:'center'
+        justifyContent:'center',
+        // marginTop:50
+        // paddingBottom:50
     },
     inputcontainer:{
         padding:10,
-        justifyContent:'center',
-        // alignItems:'center'
+        // flex:1,
+        justifyContent:'center'
     },
     text:{
         fontSize:20,
-        // fontWeight:'bold',
-        paddingBottom:5,
-        marginRight:10,
+        // fontWeight:'bold'
         fontFamily:fonts.logintitle
     },
     inputview:{
@@ -31,12 +32,7 @@ const styles=StyleSheet.create({
         fontSize:17,
         borderRadius:10
     },
-    userLogin:{
-        padding:30,
-        justifyContent:'center',
-        flexDirection:'row',
-    },
-    buttonView:{
+     buttonView:{
         justifyContent:'center',
         // alignItems:'center',
         padding:40,
@@ -46,10 +42,10 @@ const styles=StyleSheet.create({
         // paddingRight:40,
     },
     button:{
-        height:60,
-        width:320,
+        height:40,
+        width:140,
         borderRadius:10,
-        marginLeft:.5,
+        marginLeft:85,
         // justifyContent:'center',
         // borderWidth:5,
         backgroundColor:'#42A5F5',
@@ -62,20 +58,16 @@ const styles=StyleSheet.create({
         // backgroundColor:'#fff'
         color:'#fff'
     },
-    user:{
-        fontSize:15,
-    },
-    joinus:{
-        fontSize:15,
-        color:'blue'
-    },
-    forg:{
-        fontSize:16,
-        // alignSelf: 'flex-end',
-        paddingLeft:200
-        // marginLeft:10
+    toptext:{
+        fontSize:26,
+        fontWeight:'bold',
+        justifyContent:'center',
+        marginLeft:65,
+        marginTop:.5,
+        paddingTop:1
     }
 
 
 });
+
 export default styles;
