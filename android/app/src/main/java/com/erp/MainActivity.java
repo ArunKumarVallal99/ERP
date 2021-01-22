@@ -16,9 +16,9 @@ public class MainActivity extends ReactActivity {
     return "ERP";
   }
 
-  @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        SplashScreen.show(this);  // here 
-        super.onCreate(savedInstanceState);
-  }
+  // @Override
+  //   protected void onCreate(Bundle savedInstanceState) {
+  //       SplashScreen.show(this);  // here 
+  //       super.onCreate(savedInstanceState);
+  // }
 }
