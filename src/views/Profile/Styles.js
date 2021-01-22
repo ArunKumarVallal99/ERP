@@ -1,6 +1,5 @@
 import {StyleSheet}from 'react-native';
 import fonts from '../../res/fonts'
-import color from '../../res/colors'
 const Styles=StyleSheet.create({
     container:{
         padding:20,
@@ -27,13 +26,13 @@ const Styles=StyleSheet.create({
     },
     profileName:{
         fontSize:16,
-        fontFamily:fonts.title,
+        fontFamily:fonts.name,
         //fontWeight:'bold',
     },
     profileID:{
-        fontFamily:fonts.text,
-        color:color.text,
-        fontSize:16,
+        fontFamily:fonts.name,
+        color:'grey',
+        fontSize:18,
        
         
     },

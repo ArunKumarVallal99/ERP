@@ -19,8 +19,8 @@ class Home extends Component{
 
                     <View style={Styles.profileContent}>
                         <Text style={Styles.profileName}>Arun Kumar Vallal</Text>
-                        <Text style={Styles.profileId}>Emp ID: 121 </Text>
-                        <Text style={Styles.profileId}>Product Designer</Text>
+                        <Text style={Styles.profileID}>Emp ID: 121 </Text>
+                        <Text style={Styles.profileID}>Product Designer</Text>
                     </View>
                 </View>
 

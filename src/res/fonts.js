@@ -1,9 +1,9 @@
 //Uncomment the below code to use this js file.
 
 const fonts = {
-    title: 'Arial',
-    text: 'SanFrancisco',
+    title: 'WorkSans-SemiBold',
+    text: 'WorkSans-Regular',
     code: 'Fira',
-    name:'sans-serif',
+    name:'WorkSans-SemiBold',
   }
   export default fonts
