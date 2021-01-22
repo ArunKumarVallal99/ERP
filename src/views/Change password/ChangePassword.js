@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {Text, View, StyleSheet, TextInput, TouchableOpacity, Alert} from 'react-native';
-import styles from '../Change password/Styles';
+import styles from '../Change password/Styles'
 
 
-export default class Password extends Component{
+export default class ChangePassword extends Component{
     state={
         CurrentPasswordValue:'',
         NewPasswordValue:'',
