@@ -47,8 +47,9 @@ export default class ChangePassword extends Component{
                         {/* <Text>Fiii</Text> */}
                         {/* // underlineColorAndroid='grey' /> */}
 
-                    <Text style={styles.text}>New Password</Text>
-                     <View style={styles.inputview}>
+                   
+                     <View style={styles.Newview}>
+                     <Text style={styles.text}>New Password</Text>
                       <TextInput style={styles.inputtext}
                         keyboardType='visible-password'
                         placeholder='Enter NewPassword'
@@ -56,8 +57,9 @@ export default class ChangePassword extends Component{
                         secureTextEntry={true} 
                         onChangeText={text=>this.setState({NewPasswordValue:text})}
                         />
-                        <Text style={styles.text}>Confirm NewPassword</Text>
+                        
                         <View style={styles.inputview}>
+                        <Text style={styles.text}>Confirm NewPassword</Text>
                         <TextInput style={styles.inputtext}
                         keyboardType='visible-password'
                         placeholder='Re-type NewPassword'

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, TextInput, TouchableOpacity, Alert} from 'react-native';
+import { Text, View, StyleSheet, TextInput, TouchableOpacity, Alert, Modal, } from 'react-native';
 import styles from './Style';
 
 export default class Login extends Component{
     state = {
         email:'',
-        passwordValue:''
+        passwordValue:'',
+        show:false,
     };
 
     validation=()=>{
@@ -50,7 +51,37 @@ export default class Login extends Component{
                         secureTextEntry={true} 
                         onChangeText={text=>this.setState({passwordValue: text})}
                         />
-                        <TouchableOpacity>
+                        <TouchableOpacity
+                        onPress={()=>{this.setState({show:true})}}>
+                        <Modal
+                           transparent={true}
+                           visible={this.state.show}>
+                          <View style={styles.viewforgot}>
+                            <View style={styles.fotgot}>
+                             <Text style={styles.textforgot}>Forgot Password.?</Text>
+       
+                       
+                              <View style={styles.inputview}>
+                              <Text style={styles.mailid}>please enter your office email to update ur password</Text>
+                                  <TextInput style={styles.passwordtext}
+                                   keyboardType='visible-password'
+                                   placeholder='optisolbusiness'
+                                   textContentType='password'
+                                   secureTextEntry={true} 
+                               
+                        />
+              </View>
+              <View style={styles.update}>
+                  <TouchableOpacity style={styles.reset}
+                  onPress={()=>{this.setState({show:false})}}>
+                      <Text style={styles.resetpassword}>Reset Password</Text>
+                  </TouchableOpacity>
+              </View>
+         </View>
+        
+         </View>
+         
+        </Modal>
                         <Text style={styles.forg}>Forgot Password.?</Text>
                         </TouchableOpacity>
                         {/* // underlineColorAndroid='grey' /> */}

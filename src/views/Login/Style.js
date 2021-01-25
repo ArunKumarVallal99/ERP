@@ -7,7 +7,7 @@ const styles=StyleSheet.create({
         justifyContent:'center'
     },
     inputcontainer:{
-        padding:10,
+        padding:30,
         justifyContent:'center',
         // alignItems:'center'
     },
@@ -16,10 +16,12 @@ const styles=StyleSheet.create({
         // fontWeight:'bold',
         paddingBottom:5,
         marginRight:10,
-        fontFamily:fonts.logintitle
+        fontFamily:fonts.logintitle,
+        marginBottom:18
     },
     inputview:{
-        paddingBottom:30
+        // paddingBottom:30
+        marginBottom:18
     },
     inputtext:{
         // flex:1,
@@ -29,7 +31,11 @@ const styles=StyleSheet.create({
         // borderBottomWidth:1,
         backgroundColor:'#D3D3D3',
         fontSize:17,
-        borderRadius:10
+        borderRadius:10,
+        fontFamily:fonts.loginplaceholder,
+        paddingLeft:18,
+        // marginBottom:18
+
     },
     userLogin:{
         padding:30,
@@ -39,18 +45,17 @@ const styles=StyleSheet.create({
     buttonView:{
         justifyContent:'center',
         // alignItems:'center',
-        padding:40,
+        padding:30,
         flex:1,
         marginRight:90,
         paddingLeft:0.5
-        // paddingRight:40,
+       
     },
     button:{
         height:60,
         width:320,
         borderRadius:10,
         marginLeft:.5,
-        // justifyContent:'center',
         // borderWidth:5,
         backgroundColor:'#42A5F5',
         borderColor:'blue',
@@ -58,9 +63,10 @@ const styles=StyleSheet.create({
         justifyContent:'center',
     },
     buttonText:{
-        fontSize:15,
+        fontSize:16,
         // backgroundColor:'#fff'
-        color:'#fff'
+        color:'#fff',
+        fontFamily:fonts.signin
     },
     user:{
         fontSize:15,
@@ -70,10 +76,78 @@ const styles=StyleSheet.create({
         color:'blue'
     },
     forg:{
-        fontSize:16,
+        fontSize:14,
+        fontFamily:fonts.loginplaceholder,
         // alignSelf: 'flex-end',
-        paddingLeft:200
+        paddingLeft:179
         // marginLeft:10
+    },
+    viewforgot:{
+        backgroundColor:'grey',
+        flex:1,
+        padding:19
+        // marginTop:250
+    },
+    fotgot:{
+        backgroundColor:'#fff',
+        margin:50,
+        marginTop:330,
+        width:276,
+        height:297,
+        borderRadius:10,
+        fontSize:20,
+        marginBottom:15,
+        paddingTop:10,
+       
+    },
+    textforgot:{
+        fontSize:20,
+        paddingBottom:10,
+        borderBottomWidth:4,
+        borderBottomColor:'#D3D3D3',
+        paddingLeft:50,
+        marginBottom:20,
+        fontFamily:fonts.name,
+    },
+    mailid:{
+        marginTop:10,
+        paddingLeft:15,
+        marginBottom:20,
+        fontSize:16,
+        fontFamily:fonts.text,
+        height:40,
+        width:242
+    },
+    passwordtext:{
+        height:45,
+        width:243,
+        paddingLeft:15,
+        backgroundColor:'#D3D3D3',
+        marginLeft:15,
+        fontFamily:fonts.text
+    },
+    update:{
+        justifyContent:"center",
+        paddingBottom:40
+    },
+    reset:{
+        height:55,
+        width:242,
+        borderRadius:10,
+        // marginLeft:.5,
+        // borderWidth:5,
+        backgroundColor:'#5827FF',
+        borderColor:'blue',
+        // alignItems:"center",
+        justifyContent:'center',
+        marginLeft:15,
+        marginBottom:40
+       
+    },
+    resetpassword:{
+        fontSize:15,
+        marginLeft:62,
+        fontFamily:fonts.name
     }
 
 
