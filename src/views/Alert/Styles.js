@@ -8,9 +8,9 @@ const Styles=StyleSheet.create({
         alignItems: "center",
         marginTop: 234,
        // marginBottom:266,
-        //marginLeft:10,
+        marginLeft:1,
         //marginRight:42,
-        width:400,
+        width:390,
         height:260,
         
 
@@ -36,6 +36,7 @@ const Styles=StyleSheet.create({
         height:280,
         paddingLeft:35,
         paddingRight:35,
+        marginBottom:90,
     },
     images:{
         height:90,
@@ -50,7 +51,7 @@ const Styles=StyleSheet.create({
     },
     close:{
         elevation:5,
-        borderRadius: 8,
+        borderRadius: 50,
         backgroundColor:colors.background,
         alignItems: "center",
         shadowColor: "#000",
@@ -58,6 +59,14 @@ const Styles=StyleSheet.create({
           width: 0,
           height: 2
         },
+        height:60,
+        width:60,
+        justifyContent:'center',
+        alignItems:'center',
     },
+    imagesClose:{
+        height:20,
+        width:20,
+    }
 })
 export default Styles;
