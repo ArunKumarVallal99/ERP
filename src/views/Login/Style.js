@@ -17,7 +17,8 @@ const styles=StyleSheet.create({
         paddingBottom:5,
         marginRight:10,
         fontFamily:fonts.logintitle,
-        marginBottom:18
+        marginBottom:18,
+        padding:2
     },
     inputview:{
         // paddingBottom:30
@@ -26,15 +27,15 @@ const styles=StyleSheet.create({
     inputtext:{
         // flex:1,
         height:50,
-        width:330,
+        width:313,
         // borderColor:'grey',
         // borderBottomWidth:1,
-        backgroundColor:'#D3D3D3',
+        backgroundColor:'#F3F3F3',
         fontSize:17,
         borderRadius:10,
         fontFamily:fonts.loginplaceholder,
         paddingLeft:18,
-        // marginBottom:18
+        marginBottom:13
 
     },
     userLogin:{
@@ -53,13 +54,14 @@ const styles=StyleSheet.create({
     },
     button:{
         height:60,
-        width:320,
+        width:309,
         borderRadius:10,
         marginLeft:.5,
         // borderWidth:5,
         backgroundColor:'#42A5F5',
         borderColor:'blue',
-        alignItems:"center",
+        paddingLeft:125,
+        // alignItems:"center",
         justifyContent:'center',
     },
     buttonText:{
@@ -79,7 +81,10 @@ const styles=StyleSheet.create({
         fontSize:14,
         fontFamily:fonts.loginplaceholder,
         // alignSelf: 'flex-end',
-        paddingLeft:179
+        paddingLeft:187,
+        marginBottom:20,
+        // height:16,
+        // width:121
         // marginLeft:10
     },
     viewforgot:{
@@ -113,7 +118,7 @@ const styles=StyleSheet.create({
         marginTop:10,
         paddingLeft:15,
         marginBottom:20,
-        fontSize:16,
+        fontSize:15,
         fontFamily:fonts.text,
         height:40,
         width:242

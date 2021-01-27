@@ -62,7 +62,7 @@ export default class Login extends Component{
        
                        
                               <View style={styles.inputview}>
-                              <Text style={styles.mailid}>please enter your office email to update ur password</Text>
+                              <Text style={styles.mailid}>please enter your office email to update your password</Text>
                                   <TextInput style={styles.passwordtext}
                                    keyboardType='visible-password'
                                    placeholder='optisolbusiness'
