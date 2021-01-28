@@ -72,7 +72,7 @@ export default class ChangePassword extends Component{
                         <View style={styles.buttonView}>
                            <TouchableOpacity style={styles.button}
                              onPress={this.validation} >
-                             <Text style={styles.buttonText}>Update Password</Text>
+                             <Text style={styles.buttonText}>Submit</Text>
                            </TouchableOpacity>
                          </View> 
 

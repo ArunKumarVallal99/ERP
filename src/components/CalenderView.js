@@ -66,7 +66,7 @@ const styles=StyleSheet.create({
     },
     calendarDetails:{
         borderWidth: 1,
-        borderColor: 'blue',
+        borderColor: '#00000029',
         //height: 200,
     },
 });

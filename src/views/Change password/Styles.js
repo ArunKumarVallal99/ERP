@@ -35,7 +35,7 @@ const styles=StyleSheet.create({
     inputtext:{
         // flex:1,
         height:50,
-        width:330,
+        width:303,
         // borderColor:'grey',
         // borderBottomWidth:1,
         backgroundColor:'#D3D3D3',
@@ -67,11 +67,13 @@ const styles=StyleSheet.create({
         borderColor:'blue',
         alignItems:"center",
         justifyContent:'center',
+        // marginTop:170
     },
     buttonText:{
         fontSize:15,
         // backgroundColor:'#fff'
-        color:'#fff'
+        color:'#fff',
+        fontFamily:fonts.name
     },
     toptext:{
         fontSize:26,
