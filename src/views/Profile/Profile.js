@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import {View,Text, TouchableOpacity  } from "react-native";
 import DropDown from "../../components/DropDown";
 import   Styles from "./Styles";
-import CustomAlert from '../Alert/CustomAlert'
+//import CustomAlert from '../../components/CalenderView'
+import LeaveApply from "../LeaveApply/LeaveApply";
 class Profile extends Component{
     constructor (props){
         super(props)
@@ -24,7 +25,8 @@ class Profile extends Component{
             // <DropDown
             // title={this.state.menuItems}
             // isvalue={this.state.menuItems.value}/>
-            <CustomAlert/>
+            // <CustomAlert/>
+            <LeaveApply/>
         
         )
     }
