@@ -2,7 +2,8 @@
 import React, { Component } from 'react'
 import {View,Text} from 'react-native';
 import Login from './src/views/Login/Login';
-import LOGOUT from './src/views/logout/logout';
+import PermissionApply from './src/views/PermissionApply/PermissionApply';
+
 // import SplashScreen from 'react-native-splash-screen'
 import Bottom from './src/navigation/BottomTabNavigation';
 // import BottomTabNavigation from './src/navigation/BottomTabNavigation';
@@ -16,10 +17,10 @@ class App extends Component{
 
   render(){
     return(
-        <Bottom/>
+        // <Bottom/>
       // <Login/>
     // <ChangePassword/>
-    // <LOGOUT/>
+    <PermissionApply />
    
       )
   }

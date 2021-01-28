@@ -17,7 +17,11 @@
     "@react-navigation/stack": "^5.13.0",
     "react": "16.13.1",
     "react-native": "^0.63.4",
+<<<<<<< HEAD
     "react-native-calendars": "^1.1140.0",
+=======
+    "react-native-calendars": "^1.1129.0",
+>>>>>>> bfe98ad35eb4a93ab1f2518759fb9cd630cbbf60
     "react-native-gesture-handler": "^1.9.0",
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",

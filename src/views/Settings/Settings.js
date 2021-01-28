@@ -14,6 +14,9 @@ export default class Settings extends Component{
                 <Text style={styles.top}>Settings</Text>
             
             <View style={styles.container}>
+            <TouchableOpacity>
+                <Text style={styles.changepassword}>Change Password</Text>
+            </TouchableOpacity>
              <TouchableOpacity
               onPress={()=>{this.setState({show:true})}}>
                 <Text style={styles.toptext}>Log Out</Text>
@@ -55,12 +58,12 @@ const styles= StyleSheet.create({
         justifyContent:'center',
     },
     toptext:{
-        fontSize:26,
+        fontSize:16,
         // fontWeight:'bold',
         justifyContent:'center',
         marginLeft:50,
         marginTop:.5,
-        paddingTop:28,
+        // paddingTop:28,
         fontFamily:fonts.logintitle, 
         paddingBottom:15,
        
@@ -120,16 +123,24 @@ const styles= StyleSheet.create({
         fontSize:16
     },
     tophead:{
-        marginTop:50
+        marginTop:60
     },
     top:{
         // marginLeft:170,
         paddingLeft:170,
         fontSize:16,
         fontFamily:fonts.name,
-        borderBottomWidth:4,
-        borderBottomColor:'#D3D3D3',
-        paddingBottom:15
+        // borderBottomWidth:4,
+        // borderBottomColor:'#D3D3D3',
+        paddingBottom:30
+    },
+    changepassword:{
+        // paddingLeft:170,
+        fontSize:16,
+        fontFamily:fonts.logintitle,
+        marginLeft:50,
+        paddingBottom:25
+
     }
    
 
