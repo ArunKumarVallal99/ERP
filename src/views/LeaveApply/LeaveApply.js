@@ -68,10 +68,14 @@ class LeaveApply extends Component {
     return(
       <View style={styles.container}>
         <View style={styles.insideContainer}>
-
+        
           <View style={styles.totalDayContainer} >
-            <Text style={styles.totalDayText}>Sick Leave: {this.state.sickLeave}</Text>
-            <Text style={styles.totalDayText}>Casual Leave: {this.state.casualLeave}</Text>
+           
+            <Text style={styles.availableLeave}>Available Leave</Text>
+            <View style={styles.top}>
+              <Text style={styles.totalDayText}>Casual Leave: {this.state.casualLeave}</Text>
+              <Text style={styles.totalDayTextSick}>Sick Leave: {this.state.sickLeave}</Text>
+            </View>
           </View>
 
           <View style={styles.pickerView}>
@@ -86,10 +90,10 @@ class LeaveApply extends Component {
           </View>
 
           <Text style={styles.durationText}> Duration From </Text>
-          <View style={styles.pickerView}> 
+          <View style={styles.dateView}> 
             <TextInput style={styles.durationFromInput} placeholder='20/12/2020' value={this.state.date.dateString}/>
             <Icon name='calendar' style={styles.CalendarIcon}
-            size={30} color='blue' 
+            size={30} color='#278BFF' 
             onPress={()=>this.setState({isDurationFromEnabled:true})}/>
            
             <Modal style={styles.modalDurationForm}
@@ -129,10 +133,10 @@ class LeaveApply extends Component {
           </View>
 
           <Text style={styles.durationText}> Duration To </Text>
-          <View style={styles.pickerView}> 
+          <View style={styles.dateView}> 
             <TextInput style={styles.durationFromInput} placeholder='20/12/2020' value={this.state.dateTo.dateString}/>
             <Icon name='calendar' style={styles.CalendarIcon}
-            size={30} color='blue' 
+            size={30} color='#278BFF' 
             onPress={()=>this.setState({isDurationToEnabled:true})}/>
            
             <Modal style={styles.modalDurationForm}

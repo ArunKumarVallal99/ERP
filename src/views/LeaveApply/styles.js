@@ -1,4 +1,5 @@
 import {StyleSheet}from 'react-native'
+import fonts from '../../res/fonts';
 const styles= StyleSheet.create({
     container:{
      //padding:20,
@@ -15,7 +16,6 @@ const styles= StyleSheet.create({
     //   padding:20,
     // },
     totalDayContainer:{
-      flexDirection:'row',
       //alignItems:'center',
       //justifyContent:'center',
       //elevation:4,
@@ -26,67 +26,104 @@ const styles= StyleSheet.create({
       height:90,
       padding:20,
     },
+    top:{
+        flexDirection:'row',
+        //justifyContent:'center',
+        //alignItems:'center',
+        //marginRight:40,
+    },
+    availableLeave:{
+        //marginRight:20,
+        fontSize:18,
+        fontFamily:fonts.text,
+        marginBottom:8,
+    },
+    totalDayTextSick:{
+        marginRight:20,
+        marginLeft:80,
+        fontSize:18,
+        fontFamily:fonts.loginplaceholder,
+      },
     totalDayText:{
+      //marginRight:20,
+      fontSize:18,
+      fontFamily:fonts.loginplaceholder,
+    },
+    pickerView:{
+      //flexDirection:'row',
+      marginBottom:10,
+      paddingLeft:20,
+    },
+   
+    pickerText:{
       marginRight:20,
       fontSize:18,
-      fontWeight:'bold',
+      marginTop:10,
+      fontFamily:fonts.name,
+
     },
-    // pickerView:{
-    //   flexDirection:'row',
-    //   marginBottom:10,
-    // },
-    // pickerText:{
-    //   marginRight:20,
-    //   fontSize:18,
-    //   marginTop:10,
-    // },
-    // pickers:{
-    //   height: 50, 
-    //   width: 200,
-    //   borderWidth:1,
-    //   borderColor:'red',
-    // },
-    // durationText:{
-    //   fontSize:18,
-    //   marginBottom:10,
-    // },
-    // durationFromInput:{
-    //   borderEndWidth:2,
-    //   borderColor:'grey',
-    //   height:40,
-    //   width:250,
-    //   borderRadius:10,
-    //   borderWidth:2,
-    // },
-    // CalendarIcon:{
-    //   marginLeft:10,
-    //   //marginTop:10,
-    // },
-    // modalDurationForm:{
-    //   justifyContent:'center',
-    //   alignItems:'center',
-    //   elevation:4,
-    //   height:150,
-    //   marginTop:250,
-    //   marginLeft:20,
-    //   marginRight:20,
-    //   backgroundColor:'white',
-    //   flex: .8,
-    //   borderRadius:10,
-    //   shadowColor: "#000",
-    //   shadowOffset: {
-    //       width: 0,
-    //       height: 2
-    //   },
-    //   shadowOpacity: 0.25,
-    //   shadowRadius: 3.84,
-    //   padding:10,
-    // },
-    // calendarDetails:{
-    //   borderWidth: 1,
-    //   borderColor: 'gray',
-    //   //height: 200,
-    // },
+    pickers:{
+      height: 50, 
+      width: 200,
+      borderWidth:1,
+      borderColor:'red',
+    },
+    durationText:{
+      fontSize:18,
+      marginBottom:10,
+      fontFamily:fonts.name,
+      paddingLeft:20,
+    },
+    dateView:{
+        flexDirection:'row',
+        marginBottom:10,
+        //paddingLeft:20,
+        //borderWidth:.5,
+        //borderColor:'grey',
+        marginLeft:20,
+        marginRight:20,
+        borderRadius:10,
+        backgroundColor:'#00000029',
+        justifyContent:'center',
+        alignItems:'center'
+      },
+    durationFromInput:{
+      //borderEndWidth:2,
+     // borderColor:'grey',
+      height:40,
+      width:250,
+     
+      //borderWidth:2,
+    },
+    CalendarIcon:{
+      marginLeft:50,
+      //marginTop:10,
+    },
+    modalDurationForm:{
+      justifyContent:'center',
+      alignItems:'center',
+      elevation:4,
+      height:150,
+      marginTop:250,
+      marginLeft:20,
+      marginRight:20,
+      backgroundColor:'white',
+      flex: .8,
+      borderRadius:10,
+      shadowColor: "#000",
+      shadowOffset: {
+          width: 0,
+          height: 2
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+      padding:10,
+    },
+    calendarDetails:{
+      borderWidth: 1,
+      borderColor: 'gray',
+      //height: 200,
+    },
     // halfDayView:{
     //   flexDirection:'row',
     //   marginBottom:10,
