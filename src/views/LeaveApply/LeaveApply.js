@@ -1,4 +1,4 @@
-import {View, Text,TouchableOpacity, StyleSheet,Picker, TextInput, Modal} from 'react-native';
+import {View, Text,TouchableOpacity, StyleSheet,Picker, TextInput, Modal, ScrollView, KeyboardAvoidingView} from 'react-native';
 import React, { Component } from "react";
 import Icon  from 'react-native-vector-icons/Feather';
 import {Calendar} from 'react-native-calendars';
@@ -66,7 +66,8 @@ class LeaveApply extends Component {
   }
   render(){
     return(
-      <View style={styles.container}>
+      <ScrollView
+       style={styles.container}>
         <View style={styles.insideContainer}>
         
           <View style={styles.totalDayContainer} >
@@ -177,32 +178,43 @@ class LeaveApply extends Component {
           </View>
           
           <View style={styles.halfDayView}>
-          <Icon name={this.state.isHalfDayEnabled ? 'check-circle' :  'circle'} size={24} color={ this.state.isHalfDayEnabled ? 'blue' :  'black'} style={styles.halfDayIcon} onPress={()=>this.setState({isHalfDayEnabled:!this.state.isHalfDayEnabled})}/>
+          {/* <Icon name={this.state.isHalfDayEnabled ? 'check-circle' :  'circle'} size={24} color={ this.state.isHalfDayEnabled ? 'blue' :  'black'} style={styles.halfDayIcon} onPress={()=>this.setState({isHalfDayEnabled:!this.state.isHalfDayEnabled})}/> */}
+          
+          <TouchableOpacity style={[styles.fullDayTouch, (this.state.isHalfDayEnabled?{backgroundColor:'white'}:{backgroundColor:'#278BFF'})]} onPress={()=>this.setState({isHalfDayEnabled:false})}>
+          <Text style={styles.fullDayText}>Full Day</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity  style={[styles.halfDayTouch,(this.state.isHalfDayEnabled?{backgroundColor:'#278BFF'}:{backgroundColor:'white'})]} onPress={()=>this.setState({isHalfDayEnabled:true})}>
           <Text style={styles.halfDayText}>Half Day</Text>
+          </TouchableOpacity>
+          
           </View>
           
           {this.state.isHalfDayEnabled &&<View style={styles.morningView}>
 
-          <Icon name={this.state.isMorningEnabled ? 'check-circle' :  'circle'} size={24} color={ this.state.isMorningEnabled ? 'blue' :  'black'} style={styles.halfDayIcon} onPress={this.morningEnable}/>
-          <Text style={styles.halfDayText}>Morning</Text>
+          <Icon name={this.state.isMorningEnabled ? 'check-circle' :  'circle'} size={24} color={ this.state.isMorningEnabled ? '#278BFF' :  'grey'} style={styles.morningIcon} onPress={this.morningEnable}/>
+          <Text style={styles.morningText}>Morning</Text>
 
-          <Icon name={this.state.isAfternoonEnabled ? 'check-circle' :  'circle'} size={24} color={ this.state.isAfternoonEnabled ? 'blue' :  'black'} style={styles.halfDayIcon} onPress={this.afternoonEnable}/>
-          <Text style={styles.halfDayText}>Afternoon</Text>
+          <Icon name={this.state.isAfternoonEnabled ? 'check-circle' :  'circle'} size={24} color={ this.state.isAfternoonEnabled ? '#278BFF' :  'grey'} style={styles.eveningIcon} onPress={this.afternoonEnable}/>
+          <Text style={styles.eveningText}>Evening</Text>
           
           </View>}
-
-          <View style={styles.reasonView}>
-              <Text style={styles.reasonText}>Reason </Text>
-              <TextInput style={styles.reasonTextInput} multiline={true} value={this.state.reasonValue}
-              onChangeText={(text)=>this.setState({reasonValue:text})}/>
-          </View>
-
+          
+          <KeyboardAvoidingView
+          behavior={Platform.OS === "android" ? "" : "height"}
+          style={styles.keyboard}>
+            <View style={styles.reasonView}>
+                <Text style={styles.reasonText}>Reason </Text>
+                <TextInput style={styles.reasonTextInput} multiline={true} value={this.state.reasonValue}
+                onChangeText={(text)=>this.setState({reasonValue:text})}/>
+            </View>
+          </KeyboardAvoidingView>
           <TouchableOpacity style={styles.submitContainer} onPress={this.validate}>
             <Text style={styles.submitText}>Submit</Text>
           </TouchableOpacity>
 
-        </View>
-      </View>
+        </View> 
+      </ScrollView>
       
       
     );
