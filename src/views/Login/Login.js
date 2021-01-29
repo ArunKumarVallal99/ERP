@@ -22,6 +22,9 @@ export default class Login extends Component{
             console.log("Missing Password")
             Alert.alert("Missing Password")
           }
+          else{
+              alert('You have been Successfully Login')
+          }
        
     }
     

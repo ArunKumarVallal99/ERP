@@ -4,10 +4,11 @@ import Icon  from 'react-native-vector-icons/Feather';
 import {Calendar} from 'react-native-calendars';
 import CalenderView from '../../components/CalenderView';
 import fonts from '../../res/fonts';
+import styles from '../PermissionApply/Styles';
 // import styles from '../Change password/Styles';
 // import styles from '../Change password/Styles';
 
-class PermissionApply extends Component {
+export default class PermissionApply extends Component {
     constructor(props){
       super(props);
       const current_date=new Date();
@@ -20,6 +21,8 @@ class PermissionApply extends Component {
         timeValue:'',
         totalHours:'',
         descriptionValue:'',
+        casualLeave:'14',
+        sickLeave:'12'
     };
     }
 
@@ -30,10 +33,10 @@ class PermissionApply extends Component {
             alert('Not mentioned')
         }
         else if (this.state.descriptionValue==''){
-            alert('Enter the Descrpition')
+            alert('Enter the Reason')
         }
         else{
-            alert('Successful Login')
+            alert('Your leave apply has been successfully applied')
         }
     };
     render(){
@@ -44,8 +47,8 @@ class PermissionApply extends Component {
             <View style={styles.topView}>
             <Text style={styles.availableLeave}>Available leave</Text>
             <View style={styles.insideContainer}>
-            <Text style={styles.leaveType}>Casual leave : 12</Text>
-            <Text style={styles.sickLeave}>Sick leave : 14</Text>
+            <Text style={styles.leaveType}>Casual leave : {this.state.casualLeave}</Text>
+            <Text style={styles.sickLeave}>Sick leave : {this.state.sickLeave}</Text>
             </View>
             </View>
                    <View style={styles.inputContainer}>
@@ -93,13 +96,13 @@ class PermissionApply extends Component {
                     </View>
 
                     <View style={styles.timeView}>
-                        <Text style={styles.timeText}>Leave type</Text>
+                        {/* <Text style={styles.timeText}>Leave type</Text>
                         <TextInput style={styles.inputtext}
                         keyboardType='visible-password'
                         placeholder='Permission Leave'
                         textContentType='password'
                         secureTextEntry={true} 
-                        />
+                        /> */}
                         <Text style={styles.pickertext}>Start Time</Text>
                         <Picker style={styles.pickers}
                         selectedValue={this.state.timeValue}
@@ -162,12 +165,12 @@ class PermissionApply extends Component {
                     </View>
                         
                     <View style={styles.descriptionView}>
-                        <Text style={styles.descriptionText}>Description</Text>
+                        <Text style={styles.descriptionText}>Reason</Text>
                         <TextInput style={styles.descriptionInput} value={this.state.descriptionValue} multiline={true} onChangeText={(text)=>this.setState({descriptionValue:text})} />
                     </View>
 
                     <TouchableOpacity style={styles.submitContainer} onPress={this.validation}>
-                    <Text style={styles.submitText}>Submit</Text>
+                    <Text style={styles.submitText}>Submit Request</Text>
                     </TouchableOpacity>
                     
 
@@ -180,196 +183,3 @@ class PermissionApply extends Component {
     }
 }
 
-const styles = StyleSheet.create({
-    container:{
-        padding:1,
-        // paddingLeft:135
-        // marginLeft:135
-        // justifyContent:'center',
-        // alignItems:'center',
-        // alignContent:'center',
-        // flex:1,
-    },
-    // insideContainer:{
-    //     // elevation:5,
-    //     borderRadius:10,
-    //     backgroundColor:'white',
-    //     width:350,
-    //     padding:20,
-    // },
-    dateText:{
-        fontSize:18,
-        marginBottom:12,
-        fontFamily:fonts.name
-    },
-    dateView:{
-        flexDirection:'row',
-        marginBottom:16,
-    },
-    dateInput:{
-        borderEndWidth:2,
-        borderColor:'#00000029',
-        height:38,
-        width:290,
-        borderRadius:10,
-        borderWidth:2,
-        backgroundColor:'#F2F3F5',
-        paddingLeft:20
-    },
-    CalendarIcon:{
-        marginLeft:10,
-        //marginTop:10,
-    },
-    modalDate:{
-        justifyContent:'center',
-        alignItems:'center',
-        elevation:4,
-        height:150,
-        marginTop:250,
-        marginLeft:20,
-        marginRight:20,
-        backgroundColor:'white',
-        flex: .8,
-        borderRadius:10,
-        // shadowColor: "#000",
-        // shadowOffset: {
-        //     width: 0,
-        //     height: 2
-        // },
-        // shadowOpacity: 0.25,
-        // shadowRadius: 3.84,
-        padding:10,
-    },
-    calendarDetails:{
-        borderWidth: 1,
-        borderColor: '#00000029',
-        //height: 200,
-    },
-    timeText:{
-        fontSize:18,
-        marginBottom:10,
-        paddingRight:90,
-        marginRight:90,
-        fontFamily:fonts.name
-    },
-    hoursView:{
-        marginBottom:12,
-    },
-    hoursText:{
-        fontSize:16,
-        marginBottom:10,
-        fontFamily:fonts.name
-    },
-    hoursInput:{
-        borderEndWidth:2,
-        borderColor:'#00000029',
-        height:38,
-        width:290,
-        borderRadius:10,
-        borderWidth:2,
-        backgroundColor:'#F2F3F5'
-    },
-    descriptionView:{
-        marginBottom:10,
-    },
-    descriptionText:{
-        fontSize:18,
-        marginBottom:10,
-    },
-    descriptionInput:{
-        borderEndWidth:2,
-        borderColor:'blue',
-        height:60,
-        width:250,
-        borderRadius:10,
-        borderWidth:2,
-    },
-    submitContainer:{
-        justifyContent:'center',
-        elevation:5,
-        backgroundColor:'pink',
-        height:30,
-        alignItems:'center',
-        width:100,
-        marginLeft:100,
-        borderRadius:10,
-      },
-    submitText:{
-        fontSize:18,
-    },
-    toptext:{
-        marginTop:40,
-        marginBottom:16,
-        fontSize:16,
-        fontFamily:fonts.name,
-        paddingLeft:147
-
-    },
-    topView:{
-        // flexDirection:'row',
-        marginBottom:16,
-        backgroundColor:'#F6FAFF'
-    },
-    insideContainer:{
-        flexDirection:'row'
-
-    },
-    availableLeave:{
-        marginTop:18,
-        color:'#17BF63',
-        fontSize:16,
-        fontFamily:fonts.text,
-        marginBottom:16,
-        paddingLeft:50
-
-    },
-    leaveType:{
-        // marginTop:51,
-        fontSize:16,
-        fontFamily:fonts.loginplaceholder,
-        marginBottom:20,
-        // paddingRight:30
-        marginLeft:25,
-        // padding:20
-    },
-    sickLeave:{
-        fontSize:16,
-        fontFamily:fonts.loginplaceholder,
-        marginBottom:20,
-        // marginTop:51,
-        paddingLeft:70
-    },
-    inputContainer:{
-        padding:20
-    },
-    inputtext:{
-        height:42,
-        width:290,
-        // borderColor:'grey',
-        // borderBottomWidth:1,
-        backgroundColor:'#F2F3F5',
-        fontSize:17,
-        borderRadius:10,
-        paddingBottom:13,
-        marginBottom:13,
-        paddingLeft:16,
-        borderColor:'#00000029',
-        borderWidth:2
-    },
-    pickertext:{
-        fontSize:16,
-        marginBottom:13,
-        fontFamily:fonts.name
-    },
-    pickers:{
-        height:50,
-        width:303,
-        backgroundColor:'#D3D3D3',
-        fontSize:17,
-        borderRadius:10,
-        paddingBottom:13,
-        marginBottom:13,
-        paddingLeft:16,
-    }
-});
-export default PermissionApply;

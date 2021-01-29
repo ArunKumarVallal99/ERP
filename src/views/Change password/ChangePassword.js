@@ -14,7 +14,7 @@ export default class ChangePassword extends Component{
         const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if(!this.state.CurrentPasswordValue.trim()){
             console.log('Enter Your OldPassword')
-            Alert.alert('Type Your Oldpassword')
+            Alert.alert('Enter Your Oldpassword')
         }
         else if(reg.test(this.CurrentPasswordValue)){
             Alert.alert("Invalid Password")
@@ -27,6 +27,9 @@ export default class ChangePassword extends Component{
             console.log('Retype NewPassword')
             Alert.alert('Retype Your Newpassword')
         } 
+        else{
+            alert('Your Password has been successfully changed')
+        }
     }
     render(){
         return(

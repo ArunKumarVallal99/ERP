@@ -17,10 +17,10 @@ class App extends Component{
 
   render(){
     return(
-        <Bottom/>
+        // <Bottom/>
       // <Login/>
-    // <ChangePassword/>
-//<PermissionApply />
+    /* <ChangePassword/> */
+     <PermissionApply />
    
       )
   }
