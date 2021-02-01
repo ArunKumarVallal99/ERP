@@ -16,7 +16,7 @@ const Styles=StyleSheet.create({
 
     },
     container:{
-        backgroundColor: "white",
+        //backgroundColor: "white",
         borderRadius: 8,
         //paddingTop: 50,
         elevation:4,
@@ -53,7 +53,6 @@ const Styles=StyleSheet.create({
         elevation:5,
         borderRadius: 50,
         backgroundColor:colors.background,
-        alignItems: "center",
         shadowColor: "#000",
         shadowOffset: {
           width: 0,

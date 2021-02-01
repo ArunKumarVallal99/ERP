@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Text, View, StyleSheet, TextInput, TouchableOpacity, Alert, Modal, Image } from 'react-native';
 import styles from './Style';
+=======
+import { Text, View, TextInput, TouchableOpacity, Alert, Modal, } from 'react-native';
+import styles from './styles';
+>>>>>>> af692a12168b6a603d46223c0f0759240c99294e
 
 export default class Login extends Component{
     state = {
