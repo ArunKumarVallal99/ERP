@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-<<<<<<< Updated upstream
 import { Text, View, TextInput, TouchableOpacity, Alert, Modal, Image} from 'react-native';
 import styles from './styles';
-
-=======
-import { Text, View, TextInput, TouchableOpacity, Alert, Modal, } from 'react-native';
-import styles from './styles';
->>>>>>> Stashed changes
-
 export default class Login extends Component{
     state = {
         email:'',
