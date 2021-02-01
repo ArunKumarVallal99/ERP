@@ -16,7 +16,7 @@ const styles=StyleSheet.create({
         // fontWeight:'bold',
         paddingBottom:5,
         marginRight:10,
-        fontFamily:fonts.logintitle,
+        fontFamily:fonts.font_Medium,
         marginBottom:18,
         padding:2
     },
@@ -31,11 +31,52 @@ const styles=StyleSheet.create({
         // borderColor:'grey',
         // borderBottomWidth:1,
         backgroundColor:'#F3F3F3',
+        borderColor:'#00000029',
+        // borderColor:'#00000029',
         fontSize:17,
         borderRadius:10,
-        fontFamily:fonts.loginplaceholder,
+        fontFamily:fonts.font_Medium,
         paddingLeft:18,
         marginBottom:13
+
+    },
+    inputviewpassword:{
+        flexDirection:'row',
+        // marginBottom:16,
+        backgroundColor:'#F2F3F5',
+        justifyContent:'center',
+        // alignContent:'center',
+        paddingLeft:10,
+        // marginLeft:20,
+        // marginRight:20,
+        alignItems:"center",
+        // borderEndWidth:2,
+        borderColor:'#F2F3F5',
+        borderWidth:2,
+        borderRadius:10,
+        marginBottom:13
+       
+
+    },
+    inputtextpassword:{
+        height:50,
+        width:270,
+        paddingLeft:13,
+        fontFamily:fonts.font_Medium,
+        fontSize:17,
+        // marginBottom:5
+        
+
+    },
+    image:{
+        height:18,
+        width:20,
+        marginRight:19
+        // paddingLeft:30
+        // marginRight:40,
+        // marginLeft:20
+        // paddingRight:40
+        // paddingLeft:80
 
     },
     userLogin:{
@@ -68,7 +109,7 @@ const styles=StyleSheet.create({
         fontSize:16,
         // backgroundColor:'#fff'
         color:'#fff',
-        fontFamily:fonts.signin
+        fontFamily:fonts.font_Medium
     },
     user:{
         fontSize:15,
@@ -78,8 +119,8 @@ const styles=StyleSheet.create({
         color:'blue'
     },
     forg:{
-        fontSize:14,
-        fontFamily:fonts.loginplaceholder,
+        fontSize:13,
+        fontFamily:fonts.font_Medium,
         // alignSelf: 'flex-end',
         paddingLeft:187,
         marginBottom:20,
@@ -87,6 +128,10 @@ const styles=StyleSheet.create({
         // width:121
         // marginLeft:10
     },
+    // for:{
+    //     flexDirection:'column'
+
+    // },
     viewforgot:{
         backgroundColor:'grey',
         flex:1,
@@ -152,7 +197,7 @@ const styles=StyleSheet.create({
     resetpassword:{
         fontSize:15,
         marginLeft:62,
-        fontFamily:fonts.name
+        fontFamily:fonts.font_Medium
     }
 
 

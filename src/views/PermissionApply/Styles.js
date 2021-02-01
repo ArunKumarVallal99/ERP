@@ -19,19 +19,35 @@ const styles = StyleSheet.create({
     dateView:{
         flexDirection:'row',
         marginBottom:16,
-    },
-    dateInput:{
+        backgroundColor:'#F2F3F5',
+        justifyContent:'center',
+        // alignContent:'center',
+        paddingLeft:10,
+        // marginLeft:20,
+        marginRight:20,
+        alignItems:"center",
         borderEndWidth:2,
         borderColor:'#00000029',
-        height:38,
-        width:345,
-        borderRadius:10,
         borderWidth:2,
-        backgroundColor:'#F2F3F5',
+        borderRadius:10
+    },
+    dateInput:{
+        // borderEndWidth:2,
+        // borderColor:'#00000029',
+        height:40,
+        width:270,
+        // marginLeft:20
+        // borderRadius:10,
+        // borderWidth:2,
+        // flexDirection:'row',
+        // // backgroundColor:'#F2F3F5',
         paddingLeft:20
     },
     CalendarIcon:{
-        marginLeft:10,
+        marginLeft:20,
+        // paddingLeft:10
+        // paddingRight:20
+        marginRight:40
         //marginTop:10,
     },
     modalDate:{
@@ -77,8 +93,8 @@ const styles = StyleSheet.create({
     hoursInput:{
         borderEndWidth:2,
         borderColor:'#00000029',
-        height:38,
-        width:345,
+        height:40,
+        width:338,
         borderRadius:10,
         borderWidth:2,
         backgroundColor:'#F2F3F5',
@@ -98,7 +114,7 @@ const styles = StyleSheet.create({
         borderColor:'#00000029',
         backgroundColor:'#F2F3F5',
         height:98,
-        width:345,
+        width:338,
         borderRadius:10,
         borderWidth:2,
         marginBottom:20
@@ -109,7 +125,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#278BFF',
         height:55,
         // alignItems:'center',
-        width:345,
+        width:338,
         // marginLeft:100,
         borderRadius:10,
         paddingLeft:108

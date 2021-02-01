@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, TextInput, TouchableOpacity, Alert, Modal, } from 'react-native';
+import { Text, View, StyleSheet, TextInput, TouchableOpacity, Alert, Modal, Image } from 'react-native';
 import styles from './Style';
 
 export default class Login extends Component{
@@ -46,14 +46,19 @@ export default class Login extends Component{
                     </View>
 
                     <Text style={styles.text}>Password</Text>
-                     <View style={styles.inputview}>
-                      <TextInput style={styles.inputtext}
+                     <View style={styles.inputviewpassword}>
+                     
+                      <TextInput style={styles.inputtextpassword}
                         keyboardType='visible-password'
                         placeholder='optisolbusiness'
                         textContentType='password'
                         secureTextEntry={true} 
                         onChangeText={text=>this.setState({passwordValue: text})}
                         />
+                        <TouchableOpacity>
+                        <Image style={styles.image}
+                     source={require('../../assets/Images/password.png')} />
+                     </TouchableOpacity>
                         <TouchableOpacity
                         onPress={()=>{this.setState({show:true})}}>
                         <Modal
@@ -85,10 +90,16 @@ export default class Login extends Component{
          </View>
          
         </Modal>
-                        <Text style={styles.forg}>Forgot Password.?</Text>
+                       
                         </TouchableOpacity>
                         {/* // underlineColorAndroid='grey' /> */}
                      </View>
+                     <View style={styles.for}>
+                     <TouchableOpacity
+                        onPress={()=>{this.setState({show:true})}}>
+                        <Text style={styles.forg}>Forgot Password.?</Text>
+                        </TouchableOpacity>
+                        </View>
                     <View style={styles.buttonView}>
                     <TouchableOpacity style={styles.button}
                             onPress={this.validation} >
