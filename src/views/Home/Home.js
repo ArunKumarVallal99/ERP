@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {View,Text,Image  } from "react-native";
+import {View,Text,Image, SafeAreaView  } from "react-native";
 //import { Icon } from "react-native-vector-icons/icon";
 import   Styles from "./Styles";
 //import Icon from "react-native-vector-icons/Ionicons";
@@ -7,6 +7,7 @@ class Home extends Component{
 
     render(){
         return(
+            <SafeAreaView>
             <View style={Styles.container}>
                 <View style={Styles.profileContainer} >
 
@@ -26,6 +27,7 @@ class Home extends Component{
 
 
             </View>
+            </SafeAreaView>
         )
     }
 }

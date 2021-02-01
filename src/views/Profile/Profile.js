@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-//import {View,Text, TouchableOpacity  } from "react-native";
-//import DropDown from "../../components/DropDown";
-//import   Styles from "./Styles";
-//import CustomAlert from '../../components/CalenderView'
 import LeaveApply from "../LeaveApply/LeaveApply";
 class Profile extends Component{
     constructor (props){
@@ -15,17 +11,10 @@ class Profile extends Component{
             
         }
     }
-    // click=()=>{
-    //    this.setState({isenabled:!this.state.isenabled})
-    // }
+
     render(){
         console.log(this.state.menuItems.value)
         return(
-            // <View></View>
-            // <DropDown
-            // title={this.state.menuItems}
-            // isvalue={this.state.menuItems.value}/>
-            // <CustomAlert/>
             <LeaveApply/>
         
         )
