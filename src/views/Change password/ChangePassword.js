@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Text, View, StyleSheet, TextInput, TouchableOpacity, Alert} from 'react-native';
+import {Text, View,TextInput, TouchableOpacity, Alert} from 'react-native';
 import styles from '../Change password/Styles'
 
 

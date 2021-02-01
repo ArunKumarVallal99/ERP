@@ -1,9 +1,9 @@
-import {View, Text,TouchableOpacity, StyleSheet,Picker, TextInput, Modal, ScrollView, } from 'react-native';
+import {View, Text,TouchableOpacity,Picker, TextInput, Modal, ScrollView, } from 'react-native';
 import React, { Component } from "react";
 import Icon  from 'react-native-vector-icons/Feather';
-import {Calendar} from 'react-native-calendars';
+//import {Calendar} from 'react-native-calendars';
 import CalenderView from '../../components/CalenderView';
-import fonts from '../../res/fonts';
+//import fonts from '../../res/fonts';
 import styles from '../PermissionApply/Styles';
 // import styles from '../Change password/Styles';
 // import styles from '../Change password/Styles';

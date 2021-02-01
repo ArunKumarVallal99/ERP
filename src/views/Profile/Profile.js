@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import {View,Text, TouchableOpacity  } from "react-native";
-import DropDown from "../../components/DropDown";
-import   Styles from "./Styles";
+//import {View,Text, TouchableOpacity  } from "react-native";
+//import DropDown from "../../components/DropDown";
+//import   Styles from "./Styles";
 //import CustomAlert from '../../components/CalenderView'
 import LeaveApply from "../LeaveApply/LeaveApply";
 class Profile extends Component{

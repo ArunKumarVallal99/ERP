@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Text, View, StyleSheet, TouchableOpacity, Modal, TextInput} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity, Modal} from 'react-native';
 import fonts from '../../res/fonts'
 // import styles from "../Login/Style";
 // import styles from "../Login/Style";
@@ -116,7 +116,7 @@ const styles= StyleSheet.create({
         backgroundColor:'#278BFF',
         marginLeft:15,
         fontFamily:fonts.text,
-        marginLeft:22,
+        //marginLeft:22,
         borderRadius:7,
         color:'#FFFFFF',
         paddingTop:8,

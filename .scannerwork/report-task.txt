@@ -1,0 +1,6 @@
+projectKey=ERP:1.0
+serverUrl=http://localhost:9000
+serverVersion=8.6.0.39681
+dashboardUrl=http://localhost:9000/dashboard?id=ERP%3A1.0
+ceTaskId=AXddTQwUV7IwhaYLcHXB
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXddTQwUV7IwhaYLcHXB
