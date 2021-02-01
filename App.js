@@ -17,13 +17,9 @@ class App extends Component{
 
   render(){
     return(
-        // <Bottom/>
-        // <Login/> 
-    /* <ChangePassword/> */
-    //  <PermissionApply />
+       
       <Login/>
-    /* <ChangePassword/> */
-     //<PermissionApply />
+
    
       )
   }
