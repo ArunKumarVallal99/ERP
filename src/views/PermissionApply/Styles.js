@@ -3,7 +3,11 @@ import fonts from '../../res/fonts';
 
 const styles = StyleSheet.create({
     container:{
-        padding:1,
+        // padding:20,
+        marginLeft:20,
+        marginRight:20,
+        // backgroundColor:'pink'
+        
         // paddingLeft:135
         // marginLeft:135
         // justifyContent:'center',
@@ -12,9 +16,9 @@ const styles = StyleSheet.create({
         // flex:1,
     },
     dateText:{
-        fontSize:18,
+        fontSize:16,
         marginBottom:12,
-        fontFamily:fonts.name
+        fontFamily:fonts.font_Medium,
     },
     dateView:{
         flexDirection:'row',
@@ -22,9 +26,9 @@ const styles = StyleSheet.create({
         backgroundColor:'#F2F3F5',
         justifyContent:'center',
         // alignContent:'center',
-        paddingLeft:10,
+        // paddingLeft:10,
         // marginLeft:20,
-        marginRight:20,
+        // marginRight:20,
         alignItems:"center",
         borderEndWidth:2,
         borderColor:'#00000029',
@@ -35,19 +39,20 @@ const styles = StyleSheet.create({
         // borderEndWidth:2,
         // borderColor:'#00000029',
         height:40,
-        width:270,
+        width:280,
         // marginLeft:20
         // borderRadius:10,
         // borderWidth:2,
         // flexDirection:'row',
         // // backgroundColor:'#F2F3F5',
-        paddingLeft:20
+        paddingLeft:15
     },
     CalendarIcon:{
-        marginLeft:20,
+        // marginLeft:20,
+        color:'#278BFF',
         // paddingLeft:10
         // paddingRight:20
-        marginRight:40
+        marginRight:20
         //marginTop:10,
     },
     modalDate:{
@@ -73,6 +78,7 @@ const styles = StyleSheet.create({
     calendarDetails:{
         borderWidth: 1,
         borderColor: '#00000029',
+        color:'#278BFF'
         //height: 200,
     },
     // timeText:{
@@ -88,13 +94,13 @@ const styles = StyleSheet.create({
     hoursText:{
         fontSize:16,
         marginBottom:10,
-        fontFamily:fonts.name
+        fontFamily:fonts.font_Medium,
     },
     hoursInput:{
         borderEndWidth:2,
         borderColor:'#00000029',
         height:40,
-        width:338,
+        width:372,
         borderRadius:10,
         borderWidth:2,
         backgroundColor:'#F2F3F5',
@@ -105,16 +111,16 @@ const styles = StyleSheet.create({
         marginBottom:10,
     },
     descriptionText:{
-        fontSize:18,
+        fontSize:16,
         marginBottom:10,
-        fontFamily:fonts.name
+        fontFamily:fonts.font_Medium,
     },
     descriptionInput:{
         borderEndWidth:2,
         borderColor:'#00000029',
         backgroundColor:'#F2F3F5',
         height:98,
-        width:338,
+        width:372,
         borderRadius:10,
         borderWidth:2,
         marginBottom:20
@@ -125,28 +131,28 @@ const styles = StyleSheet.create({
         backgroundColor:'#278BFF',
         height:55,
         // alignItems:'center',
-        width:338,
+        width:372,
         // marginLeft:100,
         borderRadius:10,
         paddingLeft:108
       },
     submitText:{
-        fontSize:18,
-        fontFamily:fonts.name,
+        fontSize:16,
+        fontFamily:fonts.font_Medium,
         color:'#fff'
     },
     toptext:{
         marginTop:40,
         marginBottom:16,
-        fontSize:16,
-        fontFamily:fonts.name,
-        paddingLeft:147
+        fontSize:18,
+        fontFamily:fonts.font_SemiBold,
+        paddingLeft:121
 
     },
     topView:{
         // flexDirection:'row',
         marginBottom:16,
-        backgroundColor:'#F6FAFF'
+        backgroundColor:'#FCF3B6'
     },
     insideContainer:{
         flexDirection:'row'
@@ -158,7 +164,7 @@ const styles = StyleSheet.create({
         fontSize:16,
         fontFamily:fonts.text,
         marginBottom:16,
-        paddingLeft:50
+        paddingLeft:128
 
     },
     leaveType:{
@@ -178,7 +184,7 @@ const styles = StyleSheet.create({
         paddingLeft:70
     },
     inputContainer:{
-        padding:23
+        // padding:23
     },
     // inputtext:{
     //     height:42,
@@ -197,7 +203,7 @@ const styles = StyleSheet.create({
     pickertext:{
         fontSize:16,
         marginBottom:13,
-        fontFamily:fonts.name
+        fontFamily:fonts.font_Medium
     },
     pickers:{
         height:50,

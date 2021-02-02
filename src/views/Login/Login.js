@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, TextInput, TouchableOpacity, Alert, Modal, Image} from 'react-native';
+import { Text, View, TextInput, TouchableOpacity, Alert, Modal, Image, SafeAreaView} from 'react-native';
 import styles from './styles';
 export default class Login extends Component{
     state = {
@@ -29,7 +29,7 @@ export default class Login extends Component{
     
     render(){
         return(
-            <View style={styles.container}>
+            <SafeAreaView style={styles.container}>
                 <View style={styles.inputcontainer}>
                     <Text style={styles.text}>Email</Text>
 
@@ -114,7 +114,7 @@ export default class Login extends Component{
               </TouchableOpacity>
                </View> */}
 
-            </View>
+            </SafeAreaView>
         )
     }
 }

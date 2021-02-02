@@ -4,6 +4,7 @@ import {View,Text} from 'react-native';
 import Login from './src/views/Login/Login';
 import SplashScreen from 'react-native-splash-screen'
 import Bottom from './src/navigation/Bottom';
+import PermissionApply from './src/views/PermissionApply/PermissionApply';
 class App extends Component{
   
   componentDidMount() {
@@ -12,7 +13,9 @@ class App extends Component{
 
   render(){
     return(
-        <Bottom/>
+        // <Bottom/>
+        //  <Login />  
+         <PermissionApply />
    
       )
   }

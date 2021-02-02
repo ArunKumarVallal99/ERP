@@ -4,11 +4,14 @@ const styles=StyleSheet.create({
     container:{
         padding:20,
         flex:1,
-        justifyContent:'center'
+        justifyContent:'center',
+        marginRight:20,
+        // backgroundColor:'pink'
     },
     inputcontainer:{
         padding:30,
         justifyContent:'center',
+        // marginRight:20
         // alignItems:'center'
     },
     text:{
@@ -27,7 +30,7 @@ const styles=StyleSheet.create({
     inputtext:{
         // flex:1,
         height:50,
-        width:313,
+        width:290,
         // borderColor:'grey',
         // borderBottomWidth:1,
         backgroundColor:'#F3F3F3',
@@ -37,7 +40,8 @@ const styles=StyleSheet.create({
         borderRadius:10,
         fontFamily:fonts.font_Medium,
         paddingLeft:18,
-        marginBottom:13
+        marginBottom:13,
+        marginRight:20
 
     },
     inputviewpassword:{
@@ -61,7 +65,7 @@ const styles=StyleSheet.create({
     inputtextpassword:{
         height:50,
         width:270,
-        paddingLeft:13,
+        paddingLeft:20,
         fontFamily:fonts.font_Medium,
         fontSize:17,
         // marginBottom:5
@@ -71,7 +75,7 @@ const styles=StyleSheet.create({
     image:{
         height:18,
         width:20,
-        marginRight:19
+        marginRight:29
         // paddingLeft:30
         // marginRight:40,
         // marginLeft:20
@@ -95,15 +99,16 @@ const styles=StyleSheet.create({
     },
     button:{
         height:60,
-        width:309,
+        width:288,
         borderRadius:10,
         marginLeft:.5,
         // borderWidth:5,
         backgroundColor:'#42A5F5',
         borderColor:'blue',
-        paddingLeft:125,
+        paddingLeft:120,
         // alignItems:"center",
         justifyContent:'center',
+        marginRight:20
     },
     buttonText:{
         fontSize:16,
@@ -122,8 +127,9 @@ const styles=StyleSheet.create({
         fontSize:13,
         fontFamily:fonts.font_Medium,
         // alignSelf: 'flex-end',
-        paddingLeft:187,
+        paddingLeft:169,
         marginBottom:20,
+       
         // height:16,
         // width:121
         // marginLeft:10

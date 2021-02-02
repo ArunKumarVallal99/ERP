@@ -43,14 +43,7 @@ export default class PermissionApply extends Component {
         return(
             <ScrollView>
             <View style={styles.container}>
-            <Text style={styles.toptext}>Apply leave</Text>
-            <View style={styles.topView}>
-            <Text style={styles.availableLeave}>Available leave</Text>
-            <View style={styles.insideContainer}>
-            <Text style={styles.leaveType}>Casual leave : {this.state.casualLeave}</Text>
-            <Text style={styles.sickLeave}>Sick leave : {this.state.sickLeave}</Text>
-            </View>
-            </View>
+            <Text style={styles.toptext}>Permission Apply</Text>
                    <View style={styles.inputContainer}>
                     <Text style={styles.dateText}> Date </Text>
                     <View style={styles.dateView}> 
@@ -103,7 +96,7 @@ export default class PermissionApply extends Component {
                         textContentType='password'
                         secureTextEntry={true} 
                         /> */}
-                        <Text style={styles.pickertext}>Start Time</Text>
+                        <Text style={styles.pickertext}>Time From</Text>
                         <Picker style={styles.pickers}
                         selectedValue={this.state.timeValue}
                         onValueChange={(itemValue, itemIndex) => {this.setState({timeValue:itemValue,totalHours:'01:00:00'})}}>
@@ -160,7 +153,7 @@ export default class PermissionApply extends Component {
                     </View>       
                     
                     <View style={styles.hoursView}>
-                        <Text style={styles.hoursText}>End time</Text>
+                        <Text style={styles.hoursText}>Total Hours</Text>
                         <TextInput style={styles.hoursInput} value={this.state.totalHours} onChangeText={(text)=>this.setState({totalHours:text})}/>
                     </View>
                         
